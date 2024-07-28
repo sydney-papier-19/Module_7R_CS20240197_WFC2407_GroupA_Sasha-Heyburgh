@@ -54,13 +54,38 @@ img {
     max-width: 100%;
 }
 
+strong { font-weight: var(--fw-bold)}
+
+:focus {
+    outline: 3px solid var(--fw-bold);
+    outline-offset: 3px;
+}
+/*Buttons*/
+
+.btn {
+    display:inline-block;
+    padding: .5em 2.5em;
+    background:var(--clr-accent) ;
+    color:var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
 
 /* Typography */
 
 h1,
 h2,
 h3 {
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
 }
 
@@ -152,11 +177,12 @@ nav { display:none;}
     text-align:center;
 }
 
+/*layout--can be placed in typography*/
 .section__title--services {
     color: var(--clr-accent);
     position: relative;
 }
-
+/*layout--can be placed in typography*/
 .section__title--services::after {
     content: '';
     display: block;
@@ -166,7 +192,9 @@ nav { display:none;}
     background: var(--clr-light);
     opacity: 0.25;
 }
-
+.services{
+    margin-bottom: 4em;
+}
 .service {
     max-width: 500px;
     margin: 0 auto;
@@ -176,7 +204,8 @@ nav { display:none;}
     .services {
         display: flex;
         max-width: 1000px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .service + .service {
