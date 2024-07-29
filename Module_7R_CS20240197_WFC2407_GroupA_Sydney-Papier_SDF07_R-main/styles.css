@@ -304,6 +304,7 @@ header {
     margin-bottom: 4em;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-evenly ;
 }
 .service {
     max-width: 500px;
@@ -325,16 +326,25 @@ header {
 
 /*About Me Section*/
 
-.about-me {
+.about-me__body {
+    
     max-width: 1000px;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 70%;
+    margin-right: ;
+    margin-left: 0%;
+    padding-bottom: 0;
+    text-align:center;
+    ;
+    
 }
 
-.about-me__img {
+.about-me-img {
     box-shadow: var(--bs);
-    max-width: 40%;
-    height: 40%;
-    margin-bottom: 60px;
+    max-width: 80%;
+    height: 70%;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 
 @media (min-width: 600px) {
@@ -345,7 +355,7 @@ header {
             "title img"
             "subtitle img"
             "text img";
-        grid-column-gap: 2em;
+        grid-column-gap: 4em;
     }
     
     .section__title--about {
@@ -354,18 +364,21 @@ header {
     
     .section__subtitle--about {
         grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
+        grid-row: 2 ;
+        position:absolute;
+        margin-top: 70px;
         left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
+        width: calc(100% + 1em);
+        padding-left: 1.5em;
         padding-right: calc(200px + 4em);
+        padding: 1.1em;
     }
     
-    .about-me__img {
-        grid-area: img;
+    .about-me-img {
+        grid-area: 1/ -1;
+        grid-column: 1.8 ;
         position: relative;
-        z-index: 2;
+        z-index: 1;
     }
 }
 
