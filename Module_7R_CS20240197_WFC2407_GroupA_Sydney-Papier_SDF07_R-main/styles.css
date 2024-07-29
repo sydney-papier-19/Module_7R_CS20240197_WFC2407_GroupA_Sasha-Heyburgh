@@ -287,6 +287,8 @@ header {
 .section__title--services {
     color: var(--clr-accent);
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*layout--can be placed in typography*/
 .section__title--services::after {
@@ -300,6 +302,8 @@ header {
 }
 .services{
     margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
 }
 .service {
     max-width: 500px;
