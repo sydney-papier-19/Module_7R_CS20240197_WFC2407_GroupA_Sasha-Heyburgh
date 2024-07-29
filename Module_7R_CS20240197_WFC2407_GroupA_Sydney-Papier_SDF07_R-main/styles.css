@@ -234,6 +234,9 @@ header {
 /*Intro section */
 .intro{
     position:relative;
+    margin-left: auto; /* this line+ following line centers intro section.*/
+    margin-right: auto;
+    margin-bottom: 2em; /* spaces intro from "What I Do" section.*/
 }
 
 .section__subtitle--intro{
