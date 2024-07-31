@@ -15,7 +15,7 @@
     
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #4980dfc0;
+    --clr-accent: #548deeef;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -276,7 +276,7 @@ header {
 /*My Services section*/
 .my-services{
     background-color:var(--clr-accent);
-    background-image: url(../Module_7R_CS20240197_WFC2407_GroupA_Sydney-Papier_SDF07_R-main/img/pexels-danbuilds.jpg);
+    background-image: url(../img/pexels-danbuilds.jpg);
     background-size:cover;
     /*background-blend-mode:multiply;*/
     color: var(--clr-light);
@@ -331,11 +331,11 @@ header {
     max-width: 1000px;
     margin: auto;
     margin-top: 70%;
-    margin-right: ;
+    margin-right:0;
     margin-left: 0%;
     padding-bottom: 0;
     text-align:center;
-    ;
+    
     
 }
 
